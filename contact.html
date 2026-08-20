@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | T John Paul</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #122033;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background: #1769e0;
+            border-radius: 5px;
+        }
+
+        .page {
+            min-height: calc(100vh - 130px);
+            padding: 60px 8%;
+        }
+
+        .page > h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+
+        .contact-box {
+            max-width: 950px;
+            margin: auto;
+
+            display: flex;
+            gap: 30px;
+        }
+
+        form,
+        .contact-info {
+            background: white;
+            padding: 30px;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.10);
+
+            flex: 1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 6px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            background: #1769e0;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 20px;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #0e4ca8;
+        }
+
+        .contact-info h2 {
+            color: #1769e0;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 18px;
+        }
+
+        footer {
+            background: #122033;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact-box {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <a href="portfolio.html" class="logo">
+            T JOHN PAUL
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="portfolio.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <h1>Contact Me</h1>
+
+    <div class="contact-box">
+
+
+        <!-- Contact Form -->
+
+        <form
+            onsubmit="event.preventDefault();
+            alert('Thank you for your message!');"
+        >
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+            <h2>
+                Get In Touch
+            </h2>
+
+            <p>
+                <strong>Name:</strong><br>
+                T John Paul
+            </p>
+
+            <p>
+                <strong>Course:</strong><br>
+                CSE — Artificial Intelligence & Machine Learning
+            </p>
+
+            <p>
+                <strong>College:</strong><br>
+                Rajeev Gandhi Memorial College of Engineering & Technology
+            </p>
+
+            <p>
+                <strong>Location:</strong><br>
+                Andhra Pradesh, India
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 T John Paul. All Rights Reserved.
+    </p>
+
+    <p>
+        CSE • AI & ML
+    </p>
+
+</footer>
+
+</body>
+
+</html>

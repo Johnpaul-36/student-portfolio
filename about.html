@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | T John Paul</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #122033;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background: #1769e0;
+            border-radius: 5px;
+        }
+
+        .page {
+            min-height: calc(100vh - 130px);
+            padding: 60px 8%;
+        }
+
+        .page > h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+
+        .about-box {
+            background: white;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        .about-box h2 {
+            color: #1769e0;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skills span {
+            background: #1769e0;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #122033;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-box {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <a href="portfolio.html" class="logo">
+            T JOHN PAUL
+        </a>
+
+        <ul>
+            <li>
+                <a href="portfolio.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html" class="active">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <h1>About Me</h1>
+
+    <div class="about-box">
+
+        <h2>Who I Am</h2>
+
+        <p>
+            Hello! I am <strong>T John Paul</strong>, a Computer Science
+            and Engineering student specializing in
+            <strong>Artificial Intelligence and Machine Learning</strong>.
+        </p>
+
+        <p>
+            I am interested in software development, web development,
+            artificial intelligence and building practical applications.
+            I enjoy learning new technologies and improving my programming
+            and problem-solving skills through academic projects.
+        </p>
+
+
+        <h2>Education</h2>
+
+        <p>
+            <strong>Course:</strong>
+            Computer Science & Engineering
+            (Artificial Intelligence & Machine Learning)
+        </p>
+
+        <p>
+            <strong>College:</strong>
+            Rajeev Gandhi Memorial College of Engineering & Technology
+        </p>
+
+        <p>
+            <strong>Location:</strong>
+            Andhra Pradesh, India
+        </p>
+
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>C</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>AI & ML</span>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 T John Paul. All Rights Reserved.</p>
+    <p>CSE • AI & ML</p>
+
+</footer>
+
+</body>
+
+</html>
